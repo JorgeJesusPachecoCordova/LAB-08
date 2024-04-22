@@ -1,0 +1,13 @@
+---
+interface Props {
+    items: string[];
+}
+
+const { items } = Astro.props;
+---
+
+<ul>
+    {items.map((item, index) => (
+        <li key={index}>{item}</li>
+    ))}
+</ul>
